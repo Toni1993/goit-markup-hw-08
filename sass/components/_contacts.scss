@@ -1,0 +1,48 @@
+.contacts {
+    display: none;
+    @media screen and( min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}}
+
+.contacts__item {
+    display: flex;
+    margin-left: 50px;
+
+    @media screen and (max-width: 1199px) {
+        .link {
+            padding-top: 20px;
+        }
+
+        &:last-child {
+            .link {
+                padding: 0 0 20px;
+            }
+        }
+    }
+}
+
+.contacts__icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+
+    @media screen and (max-width: 1199px) {
+        width: 14px;
+        height: 10px;
+    }
+}
+
+.contacts__icon-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+
+    @media screen and (max-width: 1199px) {
+        height: 14px;
+    }
+}
+

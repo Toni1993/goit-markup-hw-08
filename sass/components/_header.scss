@@ -1,0 +1,14 @@
+
+.page-header {
+    border-bottom: 1px solid var(--border-color-header);
+    @media screen and (max-width: 1199px) {
+        .container{
+            max-width: none;
+        }
+    }
+}
+.page-header .top-panel {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}

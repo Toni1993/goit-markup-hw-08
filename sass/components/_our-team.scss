@@ -1,0 +1,104 @@
+.our-team {
+    background-color: var(--background-color);
+}
+
+.our-team__list {
+    @media screen and( min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+    @media screen and( min-width: 1200px) {
+        margin: 0 auto;
+    }}
+
+.our-team__item {
+    margin: 0 auto 30px;
+    background: var(--focus-color-text);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+
+    @media screen and( min-width: 768px) and( max-width: 1199px) {
+        width: 354px;
+        margin-left: 30px;
+
+        flex-basis: calc((100% - 60px) / 2);}
+
+    @media screen and( min-width: 1200px){
+        flex-basis: calc((100% - 120px) / 4);
+        margin-bottom: 0;
+    }
+
+}
+.our-team__wrapertext {
+    padding: 30px;
+}
+
+.our-team__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.our-team__subtitle {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+
+}
+.our-team__link {
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    margin: 0 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    fill: var(--color-icons);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus {
+    background-color: var(--accent-color-accent);
+    fill: var(--focus-color-text)
+}
+.footer &:hover, .footer &:focus {
+    background-color: var(--accent-color-accent)
+}
+}
+.our-team__icon-list {
+    display: flex;
+    justify-content: center;
+}
+
+.our-team__icon-list--top {
+    margin-top: 16px;
+}
+
+.our-team__icon {
+    width: 20px;
+    height: 20px;
+}
+.footer .our-team__link {
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    fill: var(--focus-color-text);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
