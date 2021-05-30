@@ -59,9 +59,11 @@
 }
 
 .clients__item{
+
+     margin-top: 30px;
 @media screen and( min-width: 480px) {
     margin-left: 30px;
-    margin-top: 30px;
+   
     flex-basis: calc((100% - 60px) / 2);
     }
 

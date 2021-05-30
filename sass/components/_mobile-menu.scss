@@ -15,6 +15,10 @@
    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
    flex-direction: column;
    &.is-open{
+      @media screen and(min-width:767px) {
+   display: none;
+   }
+
    opacity: 1;
    visibility: visible;
    display: flex;
@@ -61,7 +65,7 @@
 }
 }
 .mobile-menu__item{
-      padding-bottom: 32px;
+      margin-bottom:  32px;
       display: block;
       font-weight: 500;
       font-size: 40px;
@@ -108,7 +112,7 @@ fill: var(--title-text-color);
    font-family: Roboto;
    font-style: normal;
    font-weight: 500;
-   font-size: 18px;
+   font-size: 34px;
    line-height: 1.22;
    letter-spacing: 0.02em;
    color: var(--accent-color-accent);
@@ -128,13 +132,14 @@ fill: var(--title-text-color);
 .mobile-menu__socials-list{
 display: flex;
 flex-wrap: wrap;
+ margin-top: 32px;
 }
 
 
 .mobile-menu__socials-list-item   {
    display: block;
    padding: 10px;
-   margin-top: 32px;
+  
    font-family: Roboto;
    font-style: normal;
    font-weight: 500;
